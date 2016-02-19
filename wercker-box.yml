@@ -1,0 +1,17 @@
+---
+
+name: ubuntu-14.04-ansible
+version: 0.0.1
+type: main
+platform: ubuntu@14.04
+description: wercker box for an ansible host
+keywords:
+  - ubuntu
+  - ansible
+packages:
+  - python-dev
+  - python-pip
+  - git-core
+script: |
+  sudo apt-get update -y
+  sudo apt-get install -V -y python-dev python-pip git-core
